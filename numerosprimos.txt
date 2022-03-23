@@ -1,0 +1,11 @@
+increm = 0
+quant = 2100
+for x in range(quant):
+    #print(x)
+    cont = 0
+    for y in range(x):
+        if x % (y + 1) == 0:
+            cont = cont + 1
+    if cont == 2:
+        increm += 1
+        print(increm,"° munero primo:",x)
